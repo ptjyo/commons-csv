@@ -1,6 +1,7 @@
 test:
   override:
     - mvn clean package
+    
 test:
  post:
    - mkdir -p $CIRCLE_TEST_REPORTS/junit/
