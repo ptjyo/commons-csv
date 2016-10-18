@@ -449,11 +449,8 @@ CSV files of various types.
           <plugin>
             <artifactId>maven-compiler-plugin</artifactId>
             <configuration combine.self="override">
-              <testExcludes>
-                <testExclude>**/CSVRecordTest.java</testExclude>
-              </testExcludes>
               <testIncludes>
-                <testInclude>**/*</testInclude>
+                <testInclude>**/TokenMatchersTest.java</testInclude>
               </testIncludes>
             </configuration>
           </plugin>
