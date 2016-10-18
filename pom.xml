@@ -449,12 +449,14 @@ CSV files of various types.
           <plugin>
             <artifactId>maven-compiler-plugin</artifactId>
             <configuration combine.self="override">
+              <testExcludes>
+                <testExclude>**/CSVRecordTest.java</testExclude>
+              </testExcludes>
               <testIncludes>
                 <testInclude>**/*</testInclude>
               </testIncludes>
             </configuration>
           </plugin>
-          
           <!-- Hook the benchmarks to the test phase -->
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
